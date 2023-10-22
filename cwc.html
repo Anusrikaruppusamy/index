@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Your Name - Portfolio</title>
+        <style>
+            body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dec8df;
+}
+
+.resume-container {
+    display: flex;
+}
+
+.left-column {
+    width: 30%;
+    background-color: #832e8f;
+    padding: 20px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.profile {
+    text-align: center;
+}
+
+.circle-photo {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 10px auto;
+}
+
+.circle-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    color: #fff;
+}
+
+.right-column {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+</style>
+</head>
+<body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Name - Resume</title>
+</head>
+<body>
+    <div class="resume-container">
+        <div class="left-column">
+            <div class="profile">
+                <div class="circle-photo">
+                    <!-- Replace this with your photo -->
+                    <img src="https://drive.google.com/file/d/1VB0E27nihn9OdpF0eRZGjhIXaatrnjAa/view?usp=share_link" alt="Your Name">
+                </div>
+        <h1>Anusri Karuppusamy</h1>
+                <h>Student</h>
+            </div>
+            <div class="about-me">
+                <h2>Profile</h2>
+                <p>I am a Computer Science Student. I consider my self a Responsible and orderly person. I looking for my first work experience.</p>
+            </div>
+            <div class="contact-me">
+                <h2>Contact</h2>
+                <p>Email: shree2122k1706@gmail.com</p>
+                
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="education">
+                <h2>Education</h2>
+                <p><strong>Bachelor of Science in Computer Science</strong></p>
+                <p>Bharathiar University, 2021-2024</p>
+            </div>
+            <div class="languages">
+                <h2>Languages</h2>
+                <p>Tamil (Fluent)</p>
+                <p>English (Fluent)</p>   
+            </div>
+            <div class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>c & c++</li>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                    <li>Web Development And Web Design</li>
+                </ul>
+</div>
+<section id="projects">
+    <div class="section-content">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="#">ChatBot</a></li>
+            
+            <!-- Add more project links here -->
+        </ul>
+    </div>
+</section>            
+        </div>
+    </div>
+</body>
+<section id="resume">
+    
+    <div class="section-content">
+        <center>
+        <h2>Resume</h2>
+        <a href="https://drive.google.com/file/d/11Uw2gfKrBEXJwUddvVjNuLTOuNuq5IOj/view?usp=sharing">Download CV</a>
+    </center>
+    </div>
+    
+</section>
+
+<footer>
+    <p>&copy; 2023 Anusri Karuppusamy</p>
+</footer>
+
+<script>
+    // Smooth scrolling to section when clicking on navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+</body>
+</html>
